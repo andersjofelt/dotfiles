@@ -1,3 +1,6 @@
+" Load Pathogen and all its bundles
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 " Make vim more useful
 set nocompatible
 " Enhance command-line completion
@@ -80,3 +83,5 @@ if has("autocmd")
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+
+
